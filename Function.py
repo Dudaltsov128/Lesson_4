@@ -19,9 +19,10 @@ def name_fr(list_name):
         if f_name <=list_name.count(list_name[i]):
             f_name = list_name.count(list_name[i])
             name = list_name[i]
-    return print(name,f_name)
+    return name,f_name
 
 name_fr(list_name100)
+print(name_fr(list_name100))
 
 # функция вывода самой редкой первой буквы имен из списка имен через сортировку списка
 def liter(name_list):
@@ -33,7 +34,7 @@ def liter(name_list):
         lit_fr.append(lit_list.count(i))
     lit_dic = list(zip(lit_list, lit_fr))
     lit_dic.sort(key=lambda x:x[1])
-    return print(lit_dic[1])
+    return lit_dic[1]
 
 # функция вывода самой редкой первой буквы имен из списка имен через сравнение частот
 def liter1(name_list):
@@ -44,7 +45,8 @@ def liter1(name_list):
         if f_name >= lit_list.count(lit_list[i]):
             f_name = lit_list.count(lit_list[i])
             name = lit_list[i]
-    return print(name,f_name)
+    return name,f_name
 
-liter(list_name100)
-liter1(list_name100)
+print(liter(list_name100))
+print(liter1(list_name100))
+
